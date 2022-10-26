@@ -4,11 +4,8 @@ require_relative 'spec_helper'
 require_relative '../incrementer'
 
 RSpec.describe Incrementer do
-  let(:incrementer) do
-    Incrementer.new([1, 2, 3])
-  end
-
   context 'when given array' do
-    it { expect(incrementer.call).to eq([2, 4, 6]) }
+    let(:value) { Incrementer.new([1, 2, 3]) }
+    it { expect(described_class(value).call).to eq([2, 4, 6]) }
   end
 end
