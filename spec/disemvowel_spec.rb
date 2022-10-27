@@ -5,6 +5,6 @@ require_relative '../disemvowel'
 
 RSpec.describe Dismvowel do
   context 'with string' do
-    it { expect(Dismvowel.new('similar variations are grouped with this').call).to eq('smlr vrtns r grpd wth ths') }
+    it { expect(described_class.new('similar variations are grouped with this').call).to eq('smlr vrtns r grpd wth ths') }
   end
 end

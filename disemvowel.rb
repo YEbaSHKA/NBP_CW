@@ -2,13 +2,13 @@
 
 # class Dismvowel
 class Dismvowel
-  attr_reader :string
+  attr_reader :given_string
 
-  def initialize(string)
-    @string = string
+  def initialize(given_string)
+    @given_string = given_string
   end
 
   def call
-    string.delete('aeiouAEIOU')
+    given_string.delete('aeiouAEIOU')
   end
 end
