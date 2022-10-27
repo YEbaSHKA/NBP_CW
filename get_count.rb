@@ -2,11 +2,13 @@
 
 # class GetCount
 class GetCount
+  attr_reader :sentence
+
   def initialize(sentence)
     @sentence = sentence
   end
 
   def call
-    @sentence.count('aeiou')
+    sentence.count('aeiou')
   end
 end
