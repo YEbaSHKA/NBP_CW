@@ -10,6 +10,6 @@ class HighAndLow
 
   def call
     @numbers_string = @numbers_string.split.map(&:to_i)
-    "#{@numbers_string.max} #{@numbers_string.min}"
+    "#{numbers_string.max} #{numbers_string.min}"
   end
 end
